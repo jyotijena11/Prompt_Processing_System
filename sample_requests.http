@@ -1,0 +1,16 @@
+### Health
+GET http://localhost:8000/health
+
+### Submit prompt
+POST http://localhost:8000/prompts
+Content-Type: application/json
+
+{
+  "prompt": "Design a distributed queue for AI workloads.",
+  "metadata": {
+    "candidate": "demo"
+  }
+}
+
+### List jobs
+GET http://localhost:8000/jobs
